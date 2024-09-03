@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/dbe1191161.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="images/NGG logo.png" class="w-[70px] h-[50px]">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Number Guessing Game</title>
+  </head>
+  <body class="bg-gray-600 w-full">
+      <div class="w-full">
+        <p class="welcomeText w-full text-center text-white text-[15px] pt-[10px] phone:text-[20px] tablet:text-[25px]">WELCOME TO THE NUMBER GUESSING ARENA</p>
+      </div>
+
+      
+      <div class="gameContainer border-solid rounded-[20px] border-black border-2 w-full px-[30px] h-[600px] relative top-[20px] m-auto justify-center" data-aos="flip-left" data-aos-duration="2000" data-aos-delay="200">
+          <div class="pt-[5px] flex relative justify-end w-full px-[20px]">
+            <p class="text-white text-[15px]">Number Range: 1 - 50</p>
+          </div>
+
+           <div class="flex relative justify-center items-center top-[50px] text-center">
+            <span class="text-red-700 bg-white w-[80px] h-[80px] rounded-full border-solid border-black border-2 flex justify-center items-center text-[80px] tablet:w-[100px] tablet:h-[100px]" 
+            
+            data-aos-delay="500" 
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500">?</span>
+          </div>
+
+           <div class="relative justify-center items-center text-center top-[100px] tablet:top-[120px]">
+              <label for="numberInput" class="text-white px-2 text-[15px]">INPUT NUMBER:</label>
+              <input id="guessInput" type="number" id="numberInput" min="0" max="50" class="w-[170px] h-[20px] text-[14px] outline-none text-center tablet:w-[200px] tablet:h-[25px]">
+           </div>
+
+           <div class="relative justify-center items-center text-center top-[150px] flex flex-col gap-[30px] tablet:flex-row tablet:top-[170px]">
+              <button id="guessBtn" class="text-white text-[15px] border-black border-[1px] border-solid px-[35px] py-[7px] hover:bg-gray-500 duration-300 hover:scale-105 tablet:px-[40px] tablet:py-[10px]">GUESS</button>
+              <p id="guessOutput" class="text-white text-[12px] tablet:text-[15px]">START GUESSING...</p>
+           </div> <hr class="top-[180px] relative tablet:top-[200px]"> <br>
+
+           <div class="relative justify-center items-center text-center top-[200px] flex gap-[30px]">
+              <div>
+                <label for="score" class="text-white px-2 text-[15px] tablet:text-[17px]">SCORE:</label>
+                <button id="scoreBtn" class="text-white border-black border-[1px] border-solid text-[14px] px-[15px] py-[4px] mr-[0px] tablet:px-[17px] tablet:py-[5px] tablet:mr-[20px]">20</button> 
+              </div>
+              <div class="w-[2px] h-[30px] bg-white"></div>
+              <div>
+                <label for="score" class="text-white px-2 text-[15px] tablet:text-[17px]">HIGHSCORE:</label>
+                <button id="highScoreBtn" class="text-white border-black border-[1px] border-solid px-[17px] py-[5px] tablet:px-[17px] tablet:py-[5px]">0</button> 
+              </div>
+         </div>
+
+         <div class="relative justify-between items-center text-center top-[230px] flex gap-[30px] px-[50px] tablet:top-[270px]">
+            <button id="againBtn" class="text-white text-[9px] border-black border-[1px] border-solid px-[12px] py-[6px] hover:bg-gray-500 duration-300 hover:scale-105 phone:text-[15px] phone:px-[15px] phone:py-[8px] tablet:px-[40px] tablet:py-[10px]">PLAY AGAIN</button>
+            <button id="resetBtn" class="text-white text-[9px] border-black border-[1px] border-solid px-[12px] py-[6px] hover:bg-gray-500 duration-300 hover:scale-105 phone:text-[15px] phone:px-[15px] phone:py-[8px] tablet:px-[40px] tablet:py-[10px]">RESET</button> 
+        </div>
+      </div>
+
+
+      <div class="relative justify-center items-center text-center top-[37px] tablet:top-[45px]">
+        <label for="dev" class="text-[15px] text-white tablet:text-[15px]">DEVELOPER:</label>
+       <a href="https://twitter.com/TDavelife"> <i class="fa-brands fa-x-twitter text-white text-[15px] hover:text-red-500 hover:scale-[1.2] transform"></i></a>
+      </div>
+  </body>
+
+  <script>
+    AOS.init()
+  </script>
+
+  <script src="script.js">
+
+  </script>
+</html>

@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.gameContainer {
+    box-shadow: 0px 20px 30px rgb(39, 37, 37);
+}
+
+.welcomeText {
+    text-shadow: 5px 3px 1px rgb(169, 40, 40);
+}
